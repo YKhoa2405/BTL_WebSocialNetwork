@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="1800">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/message.css">
+        <link rel="shortcut icon" href="image/K.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <script src="https://kit.fontawesome.com/6f688f08b3.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="message.js"></script>
+        <title>Nhắn tin</title>
+    </head>
+<body class="flex">
+   
+    <nav>
+        <div>
+            <div class="menu-top ">
+                <div><a href="home-page.html"><i class="fa fa-home"></i></a></div>
+                <div><a href=""><i class="fa fa-user"></i></a></div>
+                <div><a href=""><i class="fa fa-book"></i></a></div>
+                <div><a href=""><i class="fa fa-check"></i></a></div>
+            </div>
+            <div class="menu-bottom">
+                <div><a href=""><i class="fa-solid fa-cloud"></i></a></div>
+                <div><a href=""><i class="fa-solid fa-gear"></i></a></div>
+            </div>            
+        </div>
+    </nav>
+
+    <section class="list">
+        <div class="search center flex">
+            <input id="kw" type="search" class="supsearch" placeholder="Tìm kiếm" onkeyup="search()">
+            <div class="flex">
+ <a href="#"><i class="fa-solid fa-user-group"></i></a>
+ <a href="#"> <i class="fa-solid fa-people-line"></i></a>
+            
+           
+        </div>
+       </div>
+        <div class="function flex v-center">
+            <ul class="flex choice">
+                <li><a href="#list1">Tất cả</a></li>
+                <li><a href="#list2">Chưa đọc</a></li>
+            </ul>
+           
+            <div>
+                <select class="pointer" name="option" id="" value="Lựa chọn">
+                    <option value="">Lựa chọn</option>
+                    <option value="">Tin nhăn người lạ</option>
+                    <option value="">Tin nhắn spam</option>
+                </select>
+            </div>
+            <div>
+                <button class="click-funtion pointer"><i class="fa-solid fa-ellipsis"></i></button>
+                <div class="modal-funtion">
+                    <div><a href="#">Đánh dấu đã đọc</a> </div>
+                    <div><a href="#">Gửi tin đồng thời</a> </div>                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="list">
+            <ul id="list1">
+                <li>
+                    <a href="#box1">
+                        <div class="send flex">
+                            <img src="https://images.unsplash.com/photo-1660406297367-da84090d9f3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                            <h2>Nguyễn Văn A</h2>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#box2"><div class="send flex">
+                    <img src="https://images.unsplash.com/photo-1601925698593-bff3e7858e7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Bùi Thị B</h2>
+                    </div></a>
+                </li>
+                <li>
+                    <a href="#box3"><div class="send flex">
+                    <img src="https://images.unsplash.com/photo-1578448177995-a37b6b29512f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Trần Văn C</h2>
+                    </div></a>
+                </li>
+                <li>
+                    <a href="#box4"><div class="send flex">
+                    <img src="https://images.unsplash.com/photo-1546712377-5029846aa6d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Nguyễn Thị D</h2>
+                    </div></a>
+                </li>
+                <li>
+                    <a href="#box5"><div class="send flex">
+                    <img src="https://images.unsplash.com/photo-1660239006153-788e6d91a271?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="">
+                    <h2>Trần Thị E</h2>
+                    </div></a>
+                </li>
+                <li>
+                    <a href="#box6"><div class="send flex">
+                    <img src="https://images.unsplash.com/photo-1596337688717-b61dea112cf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Đinh Văn F</h2>
+                    </div></a>
+                </li>
+                <li>
+                    <a href="#box7"><div class="send flex">
+                    <img src="https://images.unsplash.com/photo-1634323026799-f2351f5f3a40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Chị N</h2>
+                    </div></a>
+                </li>
+                <li>
+                    <a href="#box8"><div class="send flex">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+                    <h2>Anh M</h2>
+                    </div></a>
+                </li>
+            </ul>
+        <ul id="list2">
+            <li>
+                <a href="#box-not1"><div class="send flex">
+                    
+                    <img src="https://images.unsplash.com/photo-1623459862162-0c04d0a45cf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    <h2>Bà K</h2>
+                    <h5>1</h5>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#box-not2"><div class="send flex">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
+                    <h2>Ông P</h2>
+                    <h5>1</h5>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        </div>
+    </section>
+
+    <section class="box">
+        
+        <section>
+        <div class="gioi-thieu">
+            <h1>Chào mừng đến với <span>Kaity!</span></h1>
+            <h4>Khám phá những tiện ích hỗ trợ làm việc và trò chuyện cùng bạn bè, người thân</h4>
+        
+    <div class="flex">
+            <div class="left">
+            <a href="#"><i class="fa-solid fa-arrow-left left" onclick="pre()"></i></a>
+            </div>
+            <div class="slider">
+            <div class="chuyen">
+        <div class="slide">
+            <img src="https://tinomail.com/wp-content/uploads/2018/06/1_5SX4nfBJHkVXEA13dfoQ3w.png" alt="">
+           <h1>Nhắn tin nhiều hơn, soạn thảo ít hơn</h1>
+        </div>
+        <div class="slide">
+            <img src="https://thientonphatquang.com/wp-content/uploads/2021/07/LANG-PHI-THOI-GIAN-696x464.jpg" alt="">
+           <h1>Tin nhắn tự xóa</h1>
+        </div>
+        <div class="slide">
+            <img src="https://techvccloud.mediacdn.vn/2020/8/14/ma-hoa-du-lieu-1-15973962798361439420583-crop-15973970184371175689850.jpg" alt="">
+            <h1>Mã hóa đầu cuối</h1>
+        </div>
+        <div class="slide">
+            <img src="https://mapp.vn/wp-content/uploads/2020/01/dich-vu-ban-data-khach-hang-chat-luon-550x350.jpg" alt="">
+            <h1>Trãi nghiệm xuyên suốt</h1>
+        </div>
+        <div class="slide">
+            <img src="https://vuihocmeo.com/wp-content/uploads/2021/05/cach-gui-file-dung-luong-lon-thumbnail.jpg" alt="">
+            <h1>Gửi file nặng</h1>
+        </div>
+        <div class="slide">
+            <img src="https://pbs.twimg.com/profile_images/1255513316702785542/8uJV9v2c_400x400.jpg" alt="">
+            <h1>Chat nhóm với đồng nghiệp</h1>
+        </div>
+           </div>
+        </div>
+        <div class="right">
+            <a href="#"><i class="fa-solid fa-arrow-right" onclick="next()"></i></a>
+        </div>
+    </div>
+</div>
+        </section>
+        <section id="box1">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1660406297367-da84090d9f3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" >
+                </div>
+                <div class="info">
+                    <h4>Nguyễn Văn A</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div class="chat">
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        <section id="box2">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1601925698593-bff3e7858e7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" >
+                </div>
+                <div class="info">
+                    <h4>Bùi Thị B</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        
+        <section id="box3">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1578448177995-a37b6b29512f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" >
+                </div>
+                <div class="info">
+                    <h4>Trần Văn C</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+
+        <section id="box4">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1546712377-5029846aa6d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" >
+                </div>
+                <div class="info">
+                    <h4>Nguyễn Thị D</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        <section id="box5">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1660239006153-788e6d91a271?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" >
+                </div>
+                <div class="info">
+                    <h4>Trần Thị E</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        <section id="box6">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1596337688717-b61dea112cf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" >
+                </div>
+                <div class="info">
+                    <h4>Đinh Văn F</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        <section id="box7">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1634323026799-f2351f5f3a40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" >
+                </div>
+                <div class="info">
+                    <h4>Chị N</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        <section id="box8">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" >
+                </div>
+                <div class="info">
+                    <h4>Anh M</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+        
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        <section id="box-not1" class="not-read">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1623459862162-0c04d0a45cf3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" >
+                </div>
+                <div class="info">
+                    <h4>Bà K</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+            <div class="chat-box">
+                <h4>how are you</h4>
+              </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+        <section id="box-not2" class="not-read">
+            <div class="chat-header">
+                <div class="flex">
+                <div class="img-header">
+                    <img src="https://images.unsplash.com/photo-1592107819583-ab5171b4c3bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" >
+                </div>
+                <div class="info">
+                    <h4>Ông P</h4>
+                    <h6>Truy cập 3 giờ trước</h6>
+                </div>
+                </div>
+                
+                <ul class="flex chat-icon">
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+                </ul>
+                
+            </div>
+          <div class="chat-box">
+            <h4>hello</h4>
+          </div>
+          <div class="chat-foot">
+            <ul class="flex chat-icon">
+                <li><a href="#"><i class="fa-solid fa-note-sticky"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-paperclip"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-clock"></i></a></li>
+        
+            </ul>
+            <div>
+                <input id="input" type="text" placeholder="nhap noi dung"/>
+                 
+            </div>
+          </div>
+        </section>
+
+    </section>
+
+</body>
+<script>
+    $(document).ready(function(){
+    $("button.click-funtion").click(function() {
+        $("div.modal-funtion").toggleClass("block");
+    });
+
+    $("div.list>ul:not(:first-child)").hide();
+    $("ul.choice a").click(function(){
+        $("ul.choice a").removeClass("active");
+        $(this).addClass("active");
+        var box=$(this).attr("href");
+        $("div.list>ul").hide();
+        $(box).show();
+    });
+
+    $(".box>section:not(:first-child)").hide();
+
+    $("div.list a").click(function(){
+        $("div.list a").removeClass("appear");
+        $(this).addClass("appear").addClass("none");
+        var box=$(this).attr("href");
+        $(".box>section").hide();
+        setTimeout(function(){
+            
+        },100);
+        $(box).show();
+    });
+    
+
+    
+
+    $("section input[type=text]").on("change",function(){
+        var k=$(this).val();
+        var h=`<h4 style="text-align:right;">${k}</h4>`;
+        var m= $(this).parent().parent().parent().children("div.chat-box");
+        m.append(h);
+        this.value= ""
+    });
+    
+});
+
+function search(){
+    var k=document.getElementById("kw").value;
+    var item=document.querySelectorAll("div.list li")
+    item.forEach(function(item){
+        let text=item.innerText;
+        if (text.indexOf(k)>=0) 
+            item.style.display=""
+        else item.style.display="none"
+        
+    })
+}
+
+var kichThuoc=document.getElementsByClassName("slider")[0].clientWidth;
+var diChuyen=document.getElementsByClassName("chuyen")[0];
+var chuyen=0;
+var mang=diChuyen.getElementsByClassName("slide");
+var max=kichThuoc * mang.length - kichThuoc;
+function next() {
+    if(chuyen < max)chuyen+=kichThuoc;
+    else chuyen=0;
+    diChuyen.style.marginLeft='-'+chuyen+'px';
+};
+function pre() {
+    if(chuyen==0)chuyen=max;
+    else chuyen-=kichThuoc;
+    diChuyen.style.marginLeft='-'+chuyen+'px';
+
+};
+setInterval(function(){
+next();
+},3000);
+</script>
+</html>
+

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="1800">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/home-page.css">
+        <link rel="shortcut icon" href="image/K.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <script src="https://kit.fontawesome.com/6f688f08b3.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="javaScript/home-page.js"></script>
+        <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+        <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+        <title>Trang chủ</title>
+    </head>
+    <body>
+        <div class="load">
+            <img class="loadimg" src="image/K.png" alt="">
+            <div class="dots-loading">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="navbar flex v-center">
+            <button class="logo">kaity</button>
+            <a href="home-page.html" class="home-main">
+                <i class="fa fa-house"></i>
+            </a>
+            <a href=""><i class="fa fa-group"></i></a>
+            <a href="message.html"><i class="fa fa-message"></i></a>
+            <a href="personal.html"><i class="fa fa-user"></i></a>
+            <a href="signIn-T1.html"><i class="fa fa-right-from-bracket"></i></a>
+        </div>
+
+        <aside>
+            <div class="groups">
+                <div class="fuction">
+                    <marquee direction="right"><h4 class="introduce">Video Giới thiệu về chúng tôi</h4></marquee>
+                    <iframe width="100%" height="300" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    <div>
+                        <div class="under"></div>
+                        <ul>
+                            <li class="wow animate__backInLeft" ><a href="#"><i class="fa fa-user-tie"></i>Bạn bè</a></li>
+                            <li class="wow animate__backInLeft" data-wow-delay="0.1s"><a href="#"><i class="fa fa-clock"></i>Kỷ niệm</a></li>
+                            <li class="wow animate__backInLeft" data-wow-delay="0.2s"><a href="#"><i class="fa fa-gamepad"></i>Trò chơi</a></li>
+                            <li class="wow animate__backInLeft" data-wow-delay="0.3s"><a href="#"><i class="fa fa-fire-flame-simple"></i>Hiến máu</a></li>
+                            <li class="wow animate__backInLeft" data-wow-delay="0.4s"><a href="#"><i class="fa fa-heart-circle-plus"></i>Gây quỹ</a></li>
+                            <li class="wow animate__backInLeft" data-wow-delay="0.5s"><a href="#"><i class="fa fa-calendar"></i>Sự kiện</a></li>
+                            <li class="wow animate__backInLeft" data-wow-delay="0.6s"><a href="#"><i class="fa fa-rectangle-ad"></i>Quảng Cáo</a></li>
+                            <li class="wow animate__backInLeft" data-wow-delay="0.7s"><a href="#"><i class="fa fa-star"></i>Yêu thích</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="under"></div>
+            </div>
+            <div class="online">
+                <div>
+                    <div class="wow animate__pulse">
+                        <p class="by">Được tài trợ</p>
+                    </div>
+                    <div class="icons flex">
+                        <div class="icon">
+                            <a href="https://vi.wikipedia.org/wiki/Manchester_City_F.C." target="_blank"><img src="image/taitro6.webp" alt="taitro"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://vi.wikipedia.org/wiki/Manchester_United_F.C." target="_blank"><img src="image/taitro7.webp" alt="taitro"></a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://vi.wikipedia.org/wiki/Leicester_City_F.C." target="_blank"><img src="image/taitro8.webp" alt="taitro"></a>
+                        </div>
+                    </div>
+                    <div class="under"></div>
+                    <button style="width:100%;" type="button" onclick="document.getElementById('id').innerHTML=Date()">Click me to display Date and time</button>
+                    <p id="id"></p>
+                    <div class="under"></div>  
+                    <div class="wow animate__pulse">
+                        <p class="by">Lời mời kết bạn</p>
+                    </div>
+                    <div class="adds-friend">
+                        <div class="add-friend flex">
+                            <div class="avt">
+                                <a href="#"><img src="image/docu.jpg" alt="add"></a>
+                            </div>
+                            <div class="info">
+                                <h4>Khoa</h4>
+                                <p>Có 30 bạn chung</p>
+                                <div>
+                                    <button class="yes" onclick="addF()"><a href="#">Xác nhận</a></button>
+                                    <button class="no"><a href="#">Xóa</a></button>
+                                    <button class="ok"><a href="#">Bạn bè</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="under"></div>
+
+                <div class="untifis">
+                    <div class="wow animate__pulse">
+                        <div class="by bell"><i class="fa-solid fa-bell"></i> Thông báo</div>
+                    </div>
+                    <a href="#" class="wow animate__backInDown">                
+                        <div class="untifi flex">
+                            <img src="image/birthday.png" alt="sinhnhat">
+                            <p>Hôm nay là sinh nhật của <span>Nguyễn Văn A</span> và <span>2 người khác</span></p>
+                        </div>
+                    </a>
+                    <a href="#" class="wow animate__backInDown" data-wow-delay="0.1s">                
+                        <div class="untifi flex">
+                            <img src="image/live.png" alt="sinhnhat">
+                            <p><span>Liên quân Mobile</span> đang phát trực tiếp</p>
+                        </div>
+                    </a>     
+                    <a href="#" class="wow animate__backInDown" data-wow-delay="0.2s">                
+                        <div class="untifi flex">
+                            <img src="image/birthday.png" alt="sinhnhat">
+                            <p>Hôm nay là sinh nhật của <span>Nguyễn Văn A</span> và <span>2 người khác</span></p>
+                        </div>
+                    </a>
+                    <a href="#" class="wow animate__backInDown" data-wow-delay="0.3s">                
+                        <div class="untifi flex">
+                            <img src="image/birthday.png" alt="sinhnhat">
+                            <p>Hôm nay là sinh nhật của <span>Nguyễn Văn A</span> và <span>2 người khác</span></p>
+                        </div>
+                    </a>
+                    <div id="hideU">
+                        <a href="#" class="wow animate__backInDown" data-wow-delay="0.1s">                
+                            <div class="untifi flex">
+                                <img src="image/heard.png" alt="tim">
+                                <p><span>Nguyễn Văn A</span> đã yêu thích bài viết của <span>bạn</span></p>
+                            </div>
+                        </a>
+                        <a href="#" class="wow animate__backInDown" data-wow-delay="0.2s">                
+                            <div class="untifi flex">
+                                <img src="image/live.png" alt="sinhnhat">
+                                <p><span>Liên quân Mobile</span> đang phát trực tiếp</p>
+                            </div>
+                        </a>
+                        <a href="#" class="wow animate__backInDown" data-wow-delay="0.3s">                
+                            <div class="untifi flex">
+                                <img src="image/live.png" alt="sinhnhat">
+                                <p><span>Liên quân Mobile</span> đang phát trực tiếp</p>
+                            </div>
+                        </a>
+                        <a href="#" class="wow animate__backInDown" data-wow-delay="0.4s">                
+                            <div class="untifi flex">
+                                <img src="image/live.png" alt="sinhnhat">
+                                <p><span>Liên quân Mobile</span> đang phát trực tiếp</p>
+                            </div>
+                        </a>          
+                        <a href="#" class="wow animate__backInDown" data-wow-delay="0.5s">                
+                            <div class="untifi flex">
+                                <img src="image/heard.png" alt="tim">
+                                <p><span>Nguyễn Văn A</span> đã yêu thích bài viết của <span>bạn</span></p>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="untifi flex center" onclick="hideUntifi()" style="cursor:pointer;" >    
+                        <p id="readU" style="font-weight:bold;"><i class="fa-solid fa-chevron-down"></i> Xem thêm</p>
+                    </div>
+                </div>
+                <div class="under"></div>
+            </div> 
+        </aside>
+        
+        <section>
+            <section class="news">
+                    <div class="new think">
+                        <div class="avt flex">
+                            <a href="personal.html"><img src="image/game.png" alt="icon"></a>
+                            <input type="text" name="text" id=""  placeholder="Bạn đang nghĩ gì ?">
+                        </div>
+                        <div class="thinksup flex v-center">
+                            <div class="fuction-think">
+                                <button class="js-btn">
+                                    <i class="fa fa-video" style="color: red;font-size: 18px;"></i>Video phát trực tiếp
+                                </button>
+                            </div>
+                            <div class="fuction-think">
+                                <button class="js-btn"><i class="fa fa-images" style="color: rgb(27, 183, 27);font-size: 18px;"></i>Hình ảnh/Video</button>
+                            </div>
+                            <div class="fuction-think">
+                                <button class="js-btn"><i class="fa fa-face-smile" style="color:yellow;font-size: 18px;"></i>Cảm xúc/Hoạt động</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+            </section>
+
+            <section class="news">
+                <div class="newsub flex center underline">
+                    <a href="personal.html"><img src="image/game.png" alt="icon"></a>
+                    <ul class="flex stylenone">
+                        <li>Đăng vào lúc <a href="#">11h11' 30/7/2022</a></li>
+                        <li>Chủ bài viết <a href="personal.html">Nguyen Van A</a></li>
+                        <li><button id="show"><i class="fa fa-eye"></i></button></li>
+                        <li><button id="hide"><i class="fa fa-eye-slash"></i></button></li>
+                    </ul>       
+                </div>
+                <div class="newcontent obj">
+                    <p>Manchester_City là một động bóng có nguồn lực tài chính hùng mạnh
+                        phiên chợ mùa hè 2022, Manchester_City <span id="dots">...</span><span id="more"> đã mua về rất nhiều tân binh 
+                        tốt, ngoài ra họ còn lập kỉ lục khi bán đi nhưng cầu thủ không còn 
+                        sử dụng tốt trong đội hình và thu về số tiền kỉ lục là 300 triệu $ 
+                    </p>
+                    <button onclick="hideText()" id="readM">Đọc thêm</button>
+                    <div class="slideshow-container"></div>
+                    <img src="image/content2.jpg" alt="haland" class="image">
+                </div>
+                <div class="likes flex center v-center underline">
+                    <div class="countlike flex center">
+                        <img src="image/like.svg" alt="">
+                        <p class="js-list">Khoa và <span class="count-people">200</span> người khác đã bày tỏ cảm xúc</p>
+                    </div>
+                    <div class="like">
+                        <ul class="flex stylenone">
+                            <li><a href="#"><span class="count-cmt">0</span> bình luận</a></li>
+                            <li><a href="#"><span class="count-share">50</span>  chia sẻ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="thinksup flex v-center underline">
+                    <div class="fuction-think" >
+                        <button onclick="likeF()" id="btnlike">
+                            <i class="fa fa-thumbs-up"></i>Like
+                        </button>
+                    </div>
+                    <div class="fuction-think">
+                        <button onclick="likeF()" id="btndislike">
+                            <i class="fa fa-thumbs-down"></i>Unlike
+                        </button>
+                    </div>
+                    <div class="fuction-think">
+                        <button>
+                            <i class="fa fa-comment"></i>Bình luận
+                        </button>
+                    </div>
+                    <div class="fuction-think" >
+                        <button id="btnshare">
+                            <i class="fa-solid fa-share"></i>Chia sẻ
+                        </button>
+                    </div>
+                </div>
+                <div class="comment v-center">
+                    <div class="count-comment">
+                        <ul class="flex stylenone v-center">
+                            <li><a href="#">Xem bình luận trước</a></li>
+                            <li><select name="comment" id="comment" class="choose">
+                                <option value="allcomment">Tất cả bình luận</option>
+                                <option value="newcontent">Bình luận mới nhất</option>
+                                <option value="">Bình luận phù hợp nhất</option>
+                                <option value="goodcomment">Bình luận nhiều like nhất</option>
+                            </select></li>
+                        </ul>
+                    </div>
+                    <div class="write-comment comment">
+                        <input type="text" name="text" id="comment-input" placeholder="Viết bình luận">
+                        <div class="commentBox">
+                          
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        
+
+            <section class="loading">
+                <i class="fa fa-circle-o-notch fa-spin"></i>
+            </section>   
+        <div class="modal js-modal">
+            <div class="modal-container">
+                <div class="md-header flex center v-center underline">
+                    <h3>Tạo bài viết mới</h3>
+                    <div class="del js-close"><i class="fa fa-close"></i></div>   
+                </div>
+                
+                <div class="md-body underline">
+                    <input type="text" name="text" placeholder="Bạn đang nghĩ gì ...?" class="thinksub" maxlength="1000">
+                    <i class="fa fa-face-smile" style="color: rgb(54, 54, 23);"></i>
+                    <div class="add-image">
+                        <input type="file" id="image-file" accept="image/jpeg, image/png, image/jpg" onchange="chooseFile(this)">
+                        <img src="" alt="" id="display-image">
+                    </div>
+                </div>
+
+                <div class="md-footer js-close" onclick="move()">
+                    Đăng tải
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-like js-modal-like">
+            <div class="modal-container list">
+                <div class="md-header flex center  underline">
+                    <div class="amount-like">Tất cả 200</div>
+                    <div class="amount-like"><i class="fa fa-thumbs-up"></i>150</div>
+                    <div class="amount-like"><i class="fa fa-thumbs-down"></i>50</div>
+                    <div class="del js-close-like"><i class="fa fa-close"></i></div>   
+                </div>
+                <div class="modal-like-lists">
+                    <div class="modal-like-list flex center">
+                        <img src="image/anh2k3.jpg" alt="" class="avt">
+                        <div>
+                            <h3>Nguyễn Y Khoa</h3>
+                            <p class="mutual">340 bạn chung</p>
+                        </div>
+                    </div>
+                    <div class="modal-like-list flex center">
+                        <img src="image/anh2k3.jpg" alt="" class="avt">
+                        <div>
+                            <h3>Nguyễn Y Khoa</h3>
+                            <p class="mutual">340 bạn chung</p>
+                        </div>
+                    </div>
+                    <div class="modal-like-list flex center">
+                        <img src="image/anh2k3.jpg" alt="" class="avt">
+                        <div>
+                            <h3>Nguyễn Y Khoa</h3>
+                            <p class="mutual">340 bạn chung</p>
+                        </div>
+                    </div>
+                    <div class="modal-like-list flex center">
+                        <img src="image/anh2k3.jpg" alt="" class="avt">
+                        <div>
+                            <h3>Nguyễn Y Khoa</h3>
+                            <p class="mutual">340 bạn chung</p>
+                        </div>
+                    </div>
+                    <div class="modal-like-list flex center">
+                        <img src="image/anh2k3.jpg" alt="" class="avt">
+                        <div>
+                            <h3>Nguyễn Y Khoa</h3>
+                            <p class="mutual">340 bạn chung</p>
+                        </div>
+                    </div>
+                    <div class="modal-like-list flex center">
+                        <img src="image/anh2k3.jpg" alt="" class="avt">
+                        <div>
+                            <h3>Nguyễn Y Khoa</h3>
+                            <p class="mutual">340 bạn chung</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

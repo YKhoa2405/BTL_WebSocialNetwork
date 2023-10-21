@@ -1,0 +1,175 @@
+    :root{
+        --bg:linear-gradient(#141e30, #243b55);
+        --color:#03e9f4;
+    }
+html{
+    height: 100%;
+}
+*{
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image:url("https://cdn.dribbble.com/users/38298/screenshots/1779032/media/7edbe49214df7b9abf9384b1e6cb74b0.jpg?compress=1&resize=800x600&vertical=top") ;
+}
+/*ham dung chung*/
+.center{
+    text-align: center;
+    align-items: center;
+}
+.link-signin{
+    text-decoration: none;
+    color:var(--color);
+    font-size: 14px;
+}
+.signin-box{
+    background: linear-gradient(#141e30, #243b55);
+    position: absolute;/*vi tri tuyet doi*/
+    top:50%;
+    left: 50%;
+    width: 450px;
+    padding: 25px;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow:0 15px 25px rgb(0 0 0 / 60%);
+}
+.signin-signup li{
+    list-style-type: none;
+    min-width: 150px;
+    padding:10px 30px 10px 0px;
+}
+.signin-signup a{
+    text-decoration: none;
+    color: var(--color);
+    background-color:var(--bg);
+    border: 1px solid var(--color);
+    padding: 14px;
+    display: block;
+}
+.signin-message{
+    display: block;
+    color: red;
+    margin: 6px 0px 0px 3px;
+    display: none;
+}
+.center.main a{
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+    background-color: var(--color);
+    color: white;
+}
+.signin-signup a:hover{
+    color: white;
+    background-color: var(--color);
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+.signin-box h4{
+    font-size: 24px;
+    color: white
+}
+.signin-form {
+    margin-bottom: 16px;
+}
+.signin-form .signin-control{
+    width: 100%;
+    display: block;
+    padding: 10px 2px;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+}
+.signin-form a{
+    text-decoration: none;  
+}
+.signin-control.double{
+    background-color: var(--bg);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--color);
+    cursor: pointer;
+}
+.signin-control.double:hover{
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+    background-color: var(--color);
+    color: white;
+}
+.no-signin{
+    text-align: left;
+}
+.no-signup{
+    text-align: right;
+    margin-bottom: 20px;
+}
+.a-signin:hover{
+    text-decoration:underline;
+}
+.boder-signin{
+    border-top: 1px solid #d8d8d8;
+    margin-bottom: 20px;
+}
+.signin-captcha{
+    font-size: 12px;
+    color: white;
+}
+.check-pass{
+    color: white;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+/* loading trang */
+.load{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image:url("https://cdn.dribbble.com/users/38298/screenshots/1779032/media/7edbe49214df7b9abf9384b1e6cb74b0.jpg?compress=1&resize=800x600&vertical=top") ;
+    overflow: hidden;
+    z-index: 10000000;
+}
+.load img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -150px;  
+}
+.dots-loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 550px;
+ }
+ .dots-loading > div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    animation: dotLoading 1s forwards infinite linear;
+    animation: colorload 1s forwards infinite linear;
+ }
+ 
+.dots-loading > div:nth-child(2) {
+    animation-delay: 0.15s;
+}
+ 
+.dots-loading > div:nth-child(3) {
+    animation-delay: 0.25s;
+}
+ 
+.dots-loading > div:nth-child(4) {
+    animation-delay: 0.35s;
+}
+@keyframes colorload {
+    0% {background-color: rgb(243, 125, 125);}
+    25% {background-color: rgb(249, 76, 76);}
+    50% {background-color: rgb(249, 34, 34);}
+    100% {background-color: rgb(244, 9, 9);}
+}
+@keyframes dotLoading {
+    to {
+       opacity: 0;
+    }
+ }

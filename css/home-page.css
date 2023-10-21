@@ -1,0 +1,692 @@
+:root{
+    --bg:linear-gradient(#141e30, #243b55);
+    --color:rgb(207, 207, 207);
+    --width:52.55%;
+    --row:10%;
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:"Lato", sans-serif;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+}
+.v-center{
+    justify-content: space-between;
+
+}
+.stylenone{
+    list-style-type: none;
+}
+.underline{
+    border-bottom: 1px solid rgb(169, 166, 166);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.md-under{
+    padding-top: 10px;
+}
+/*start header*/
+
+.navbar{
+    overflow: hidden;
+    background-color: rgb(236, 234, 234);;
+    position: fixed;
+    top:0;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.navbar a{
+    display: block;
+    color: black;
+    padding: 17px 30px;
+    border-radius: 10px;   
+    text-decoration: none; 
+    position: relative;
+}
+a.home-main{
+    border-bottom-style: groove;
+} 
+.navbar .logo{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight:900;
+    background-color: #3dadee;
+    animation: uploadImage 4s infinite;
+    padding: 15px 60px;
+    cursor: pointer;
+}
+.navbar a::before{
+    content: "";
+    height:0%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 9px;
+    animation: uploadImage 1s infinite;
+    z-index: -1;
+    transition: height 0.3s ease-in;
+}
+.navbar a:hover::before{
+    height: 100%;
+}
+.navbar a:hover .fa{
+    animation: hoveIcon 0.6s;
+    transform: translateY(-7px);
+}
+
+@keyframes hoveIcon{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-7px);
+    }
+}
+/*end nav*/
+
+/*start section*/
+
+aside > div{
+    position: fixed;
+    width: calc((100% - var(--width)) / 2 - 2%);
+    height: 92.55%;
+    overflow-y: scroll;
+    background-color: rgb(236, 234, 234);
+    bottom: 0;
+}
+aside > div:last-child{
+    float: left;    
+}
+aside > div::-webkit-scrollbar{
+    width: 8px;
+    background-color: white;
+}
+aside > div:hover::-webkit-scrollbar-thumb {
+    background-color: #a4a0a0;
+}
+aside div:first-child{
+    left: 0%;
+}
+aside div:last-child{
+    right: 0%;
+}
+.loading{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.fuction li{
+    list-style-type: none;
+}
+.fuction a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    padding: 16px 30px;
+    border-radius: 12px 0px 0px 12px;
+    margin-left: 12px;
+    position: relative;
+}
+.fuction .introduce{
+    font-size: 18px;
+    padding: 5px;
+    
+}
+.fuction .fa{
+    font-size: 18px;
+    padding-right: 20px;   
+}
+.fuction a:hover{
+    background-color: var(--color);
+    box-shadow: -3px 2px 2px  #AAA;
+    transition: 0.7s ease;
+}
+@keyframes hover-icon{
+    100%{
+        transform: translateY(-7px);
+    }
+}
+.under{
+    border-bottom: 1px var(--color) solid;
+}
+.online .icons {
+    padding: 10px 15px 25px;
+}
+.online .icon {
+    margin-left: auto;
+    margin-right: auto;
+}
+.online .icon img{
+    width: 50px;
+    display: block;
+    transition: linear 0.5s;
+    opacity: 0.7;
+}
+.online .icon a {
+    display: block;
+}
+.online .icon a:hover img{
+    transform: rotateY(180deg);
+    opacity: 1;
+
+}
+.online .by{
+    font-size: 18px;
+    opacity: 0.6;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    list-style-type: none;  
+}
+.add-friend:hover{
+    background-color: var(--color);
+    box-shadow: -3px 2px 2px  #AAA;
+    transition: 0.7s ease;
+}
+
+.adds-friend{
+    margin-bottom: 10px;
+}
+.add-friend{
+    border-radius: 20px 0px 0px 20px;
+    padding: 8px 5px;
+    margin-left: 10px;
+}
+.add-friend img{
+    width: 60px;
+    border-radius: 50%;
+}
+.add-friend .avt{
+    padding: 5px 20px 5px 5px;
+}
+.add-friend .info h4{
+    font-size: 18px;
+    padding-top: 5px;
+}
+.add-friend .info p{
+    font-size: 12px;
+    opacity: 0.8;
+    color: #333;
+    margin-bottom: 10px;
+}
+.add-friend .info button{
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.add-friend .info a{
+    font-weight: bold;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 15px;
+}
+.add-friend .info .yes{
+    background-color:#3dadee;;
+    border-radius:5px;
+    border: none;
+    box-shadow: 0 6px #999;
+    opacity: 0.8;
+}
+.add-friend .info .no{
+    border: none;
+    background-color: rgb(241, 10, 10);
+    border-radius: 5px;
+    box-shadow: 0 6px #999;
+    opacity: 0.8;
+}
+.add-friend .info button:active{
+    opacity: 1;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+.add-friend .info .ok{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    display: none;
+}
+
+
+.untifis{
+    margin-bottom: 10px;
+    
+}
+.untifis a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.untifis .untifi{
+    padding: 15px 10px 5px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: 10px;
+}
+.untifis .untifi:hover{
+    box-shadow: -3px 2px 2px  #AAA;
+    background-color: var(--color);
+    transition: 0.7s ease;
+}
+.untifi img{
+    width: 40px;
+    margin-right: 10px;
+}
+.untifi span{
+    font-weight: bold;
+}
+.works .icon{
+    float: right;
+}
+
+/*start section*/
+.news{
+    margin: 20px;
+    padding: 2%;
+    background-color: var(--color);
+    height: auto;
+    width: var(--width);
+    margin: 0 auto;
+    border-radius:10px;
+    margin-top: 15px;
+}
+.news:hover{
+    box-shadow: 1px 1px 5px 2px rgb(208, 205, 205);
+    transition: 0.7s ease;
+}
+.news .new.think{
+    margin-top: 25px;
+}
+#myProgress{
+    width: 100%;
+    background-color: #ddd;
+}
+#myBar {
+    width: 1%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    background-color: #04AA6D;
+    display: none;
+}
+button#show{
+    border-radius:5px;
+    border: none;
+    box-shadow: 0 6px #999;
+}
+button#show:active{
+   box-shadow: 0 3px #666;
+    transform: translateY(4px); 
+}
+button#hide{
+    border-radius:5px;
+    border: none;
+    box-shadow: 0 6px #999;
+}
+button#hide:active{
+   box-shadow: 0 3px #666;
+    transform: translateY(4px); 
+}
+
+.new .avt{
+    margin-bottom: 10px;
+}
+.new.think .avt img{
+    width: 30px;
+    border-radius:50%;
+    margin-right: 10px;
+}
+.new.think .avt input{
+    width: 85%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+.new .thinksup{
+    padding: 15px 20px 0px;
+    border-top: 1px solid rgb(169, 166, 166);
+}
+.thinksup .fuction-think a{
+    text-decoration: none;
+    color: black;
+}
+.thinksup .fuction-think button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color);
+    transition: 0.5s ease;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: black;
+}
+.thinksup .fuction-think button.liked {
+    color: blue ;
+}
+.thinksup .fuction-think button.disliked {
+    color: red ;
+}
+
+.thinksup .fuction-think .fa{
+    margin:0px 10px;
+}
+.thinksup .fuction-think button:hover{
+    background-color: rgb(234, 232, 232);
+    box-shadow: -2px -2px  5px #AAA;
+    transition: 0.7s ease;
+}
+.news .newsub img{
+    width: 25px;
+    border-radius:50%;
+    margin-right: 5px;
+}
+
+.newsub ul > li{
+    padding-left:20px ;    
+}
+.newsub ul > li button{
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.newsub ul > li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.news .newcontent{
+    margin-top: 5px;
+}
+.news .newcontent p{
+    text-align: left;
+}
+.news .newcontent img{
+    width: 100%;
+    margin-top: 10px;
+    height: 500px;
+}
+#more{
+    display: none;
+}
+#hideU{
+    display: none;
+}
+#readM{
+    border-radius: 4px;
+    box-shadow: 0 6px #999;
+    opacity: 0.8;
+    border: none;
+}
+#readM:active{
+    opacity: 1;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+.demo:active{
+    display: none;
+}
+.likes .countlike img{
+    width: 20px;
+}
+.likes .like li:first-child{
+    padding-right: 10px;
+}
+.likes a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.8;
+}
+.likes a:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+.likes p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.count-comment ul{
+    padding: 10px 0px 0px;
+}
+.count-comment ul > li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.count-comment ul > li a:hover{
+    text-decoration: underline;
+}
+.count-comment .choose{
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+}
+.comment .write-comment input{
+    width: 85%;
+    padding: 5px 2px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px -5px;
+}
+div.comment{
+    justify-content: center;
+}
+
+#comment-input {
+    display: block;
+    width: 100%;
+}
+
+.commentBox h4 {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #333;
+    border-radius: 15px;
+    margin-top: 16px;
+    font-weight: 400;
+    background-color: #eee;
+}
+
+.commentBox h4 + h4 {
+    margin-top: 10px;
+}
+
+.modal{
+    position: fixed; /*lop phu*/
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal .modal-container{
+    width: 500px;
+    height: 400px;
+    min-height: 300px;
+    background-color: rgb(246, 239, 239);
+    margin: 0 auto;
+    margin-top: 8%;
+    border-radius: 0px 0px 20px 20px;
+    animation: modalFadein ease .5s;
+    position: relative;
+}
+.modal-container .md-header h3{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+.md-header .del{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    padding: 10px 15px;
+    cursor: pointer; 
+    font-size: 12px;  
+}
+.md-header .del:hover{
+    background-color: red;
+    color: white;
+    transition: 0.7s ease;
+}
+.md-body{
+    padding-top: 10px;
+}
+.md-body .thinksub{
+    width: 94%;
+    border: none;
+    font-size: 18px;
+    padding-left: 5px;
+    background-color: rgb(246, 239, 239);
+    height: 70px;
+}
+.md-body #display-image{
+    width: 99.8%;
+    height: 223px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+}
+.md-footer{
+    background-color: #3dadee;;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 3px;
+    border-radius: 0px 0px 20px 20px;
+    cursor: pointer;
+    color: black;
+    text-shadow: 5px 2px 8px white ;
+    border: none;
+    animation: uploadImage 2s infinite;
+}
+@keyframes modalFadein {
+    from {
+        opacity: 0;
+        transform:translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes uploadImage{
+    0% {background-color: rgb(161, 161, 246); color: black;}
+    25% {background-color: rgb(132, 132, 248);color: bisque;}
+    50% {background-color: rgb(88, 88, 250);color:burlywood;}
+    100% {background-color: rgb(43, 43, 249);color: white;}
+}
+
+.modal-container.list{
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+.modal-like .amount-like{
+   margin: 0 auto;  
+   padding-top: 5px;
+   cursor: pointer;
+}
+.modal-like .amount-like:hover{
+    color: white;
+    background-color: #3dadee;
+}
+.modal-like-list{
+    padding: 10px;
+}
+.modal-like-list .avt{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.modal-like-list .mutual{
+    font-size: 14px;
+    opacity: 0.7;
+}
+.modal-like-list .like{
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* loading trang */
+.load{
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image:url("https://cdn.dribbble.com/users/38298/screenshots/1779032/media/7edbe49214df7b9abf9384b1e6cb74b0.jpg?compress=1&resize=800x600&vertical=top") ;
+    overflow: hidden;
+    z-index: 10000000;
+}
+.load img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -150px;  
+}
+.dots-loading {
+    display: flex;
+    justify-content: center;
+    margin-top: 550px;
+ }
+ .dots-loading > div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+    animation: dotLoading 1s forwards infinite linear;
+    animation: colorload 1s forwards infinite linear;
+ }
+ 
+.dots-loading > div:nth-child(2) {
+    animation-delay: 0.15s;
+}
+ 
+.dots-loading > div:nth-child(3) {
+    animation-delay: 0.25s;
+}
+ 
+.dots-loading > div:nth-child(4) {
+    animation-delay: 0.35s;
+}
+@keyframes colorload {
+    0% {background-color: rgb(243, 125, 125);}
+    25% {background-color: rgb(249, 76, 76);}
+    50% {background-color: rgb(249, 34, 34);}
+    100% {background-color: rgb(244, 9, 9);}
+}
+@keyframes dotLoading {
+    to {
+       opacity: 0;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+

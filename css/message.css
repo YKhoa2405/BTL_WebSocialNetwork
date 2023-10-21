@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:arial ;
+}
+:root{
+    --width:7%
+    --color:rgb(207,207,207);
+}
+
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+}
+.v-center{
+    justify-content: space-between;
+}
+nav{
+    
+    display: inline-block;
+    width: 10%;
+}
+section.list{width: 20%;
+
+display: inline-block;}
+section.box{width: 70%;}
+ul>li{list-style-type: none;
+    margin: 0 ;
+}
+
+ul>li>a{display: block;}
+.active{
+    color:lightcoral;
+    text-decoration: underline blue !important;
+}
+a{text-decoration: none;
+color:black}
+nav > div a{
+    color: white;
+    display: block;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #3989ff;
+ 
+}
+nav > div a:hover{
+    background-color:rgb(207, 207, 207)
+}
+section.list{
+    background-color:rgb(208, 208, 218);
+    width: 30%;
+    height: 520px;
+    display: block  ;
+    
+}
+div.list{
+    height: 100%;
+    background-color: white;
+    overflow: scroll;
+}
+
+ul#list2 h5{
+    background-color:black;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.none h5{visibility: hidden;}
+
+.search{
+    background-color: aqua;
+    padding: 15px;
+    border-right:1px solid white ;
+    border-right: 1px solid black;
+}
+.search div>a{
+    margin-left: 10px;
+}
+.search div>a i{
+    font-size: 20px;
+}
+.search .supsearch{
+    padding: 8px 5px;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+}
+.function{
+    padding: 15px;
+    font-size: 18px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    border-bottom: 1px solid grey;
+}
+ul.choice>li{margin: 0 5px;}
+.modal-funtion{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px rgb(234, 232, 232);
+    display: none;
+    position: fixed;
+    font-size: small;
+}
+.modal-funtion>div>a{
+    display: block;
+    padding: 10px;
+}
+.modal-funtion>div>a:hover{
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+.click-funtion:hover .modal-funtion{
+    display: block;
+}
+.pointer{cursor: pointer;}
+
+.send{
+    cursor: pointer;
+    padding: 10px;
+}
+.send>img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.send h2{
+    
+    display: flex;
+    
+    align-items: center;
+}
+div.send:hover{
+    background-color: whitesmoke
+}
+
+.change{
+    color: blue;
+    text-decoration: solid;
+}
+.block{
+    display: block !important;
+}
+
+h1>span{color: blue;}
+h1,h4{text-align: center;
+margin: auto;}
+.gioi-thieu>h1,.gioi-thieu>h4{margin: 10px 5px;}
+.gioi-thieu{margin-top: 50px;
+   }
+.left,.right{
+    display: flex;
+    align-items: center;
+}
+.slide h1{color: lightseagreen;}
+.slider{
+    margin: 0 auto;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.chuyen{width: 9999px;
+    transition:all 0.5s;
+}
+.slide{
+    width: 500px;
+    float: left;
+}
+.slide img{width: 100%;
+    height: 400px;
+}
+
+
+.chat-header{
+ 
+    border: 1px solid transparent;
+    width: 100%;
+    height: 10%;
+   
+    display: inline-block;
+    background-color: aqua;display: flex;
+    justify-content: space-between;
+}
+.chat-header h4{text-align: left;}
+.img-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+    .img-header{
+        border-radius: 50%;
+        width: 50px;
+       margin:3px 10px;
+    }
+    .info{margin-top: 10px;}
+    .info h4{font-size: 20px;}
+    .info h6{font-size: 10px;}
+    .chat-icon{
+        display: flex;
+        align-items: center;
+    }
+    .chat-icon a{display: block;
+    padding: 8px;
+    margin: 5px;
+    }
+    ul.chat-icon{margin: 0;
+    padding: 0;
+       
+}
+    .chat-foot ul.chat-icon{ border-bottom: 1px blue solid;}
+    .chat-icon a:hover{
+        background-color: lightgray;
+    }
+
+
+    .chat-foot{
+        background-color: white
+    }
+
+    div.chat-box{
+        width: 100%;
+        height: 493px;
+        overflow-y: auto;
+        background-color: lightgray;
+        border: 1px solid black;
+    }
+    div.chat-box h4{text-align:left ;}
+    
+    .appear{
+        background-color: lightblue;
+    }
+section input[type=text]{width: 500px;}
